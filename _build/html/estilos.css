@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    ;
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(17, 5, 28);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgba(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bolt;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.colorpalabra {
+    color: blueviolet;
+}
+
+#somos-proya .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-pro {
+    background-color: rgb(122, 79, 102);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-repeat: round;
+
+}
+
+#nuestros-pro .container {
+    padding: 10px 0px;
+
+}
+
+#nuestros-pro h2 {
+    margin-top: 0;
+}
+
+#nuestros-pro p {
+    display: none;
+}
+
+#nuestros-pro .carta {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+#nuestros-pro .container h3 {
+    padding: 40px;
+}
+
+.carta:first-child {
+    background-image: url("imagen/primero.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: url("imagen/segundo.jpg");
+
+}
+
+.carta:nth-child(3) {
+    background-image: url("imagen/tercero.jpg");
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#Aplicaya {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#caracteristicas .li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#Aplicaya {
+    background-color: rgb(122, 79, 102);
+    height: 80vh;
+
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 17, 21);
+    height: 150px;
+    color: white;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto {
+
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        margin-top: 0px;
+    }
+
+    #somos-proya .imagen {
+        background-image: url("imagen/Fondo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-pro .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-pro p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-pro h3 {
+        margin-top: 0;
+    }
+
+    #nuestro-pro .carta {
+        padding: 15px;
+    }
+
+}
